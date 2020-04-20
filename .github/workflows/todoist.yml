@@ -4,10 +4,13 @@ name: todoist
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
-on: [push]:
+on: [push]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  create-todos:
-    - name: todo-actions
-      uses: dtinth/todo-actions@v0.2.0
+  createTodos:
+    name: createTodos
+    runs-on: ubuntu-latest
+    steps:
+      - name: todo-actions
+        uses: dtinth/todo-actions@v0.2.0
