@@ -21,7 +21,7 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LABEL: "// TODO"
           COMMENT_MARKER: "//"
-        id: "todo //"
+        id: "todo_cs"
       - name: "TODO to Issue"
         uses: "alstr/todo-to-issue-action@master"
         with:
@@ -31,4 +31,4 @@ jobs:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LABEL: "<!-- TODO"
           COMMENT_MARKER: "<!--"
-        id: "todo"
+        id: "todo_xml"
